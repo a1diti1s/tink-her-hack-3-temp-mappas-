@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Travel Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Travel Tracker</h1>
+        <label for="location">Enter Location:</label>
+        <input type="text" id="location" name="location">
+        <button onclick="loadRestaurants()">Find Restaurants</button>
+        
+        <div id="restaurant-section" style="display: none;">
+            <h2>Select Restaurants for Each Meal</h2>
+            <div id="meal-selection">
+                <h3>Breakfast</h3>
+                <select id="breakfast"></select>
+                <h3>Lunch</h3>
+                <select id="lunch"></select>
+                <h3>Dinner</h3>
+                <select id="dinner"></select>
+            </div>
+            <button onclick="calculateTotalCost()">Calculate Total Cost</button>
+        </div>
+        
+        <div id="total-cost" style="display: none;">
+            <h3>Total Estimated Cost: $<span id="cost">0</span></h3>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

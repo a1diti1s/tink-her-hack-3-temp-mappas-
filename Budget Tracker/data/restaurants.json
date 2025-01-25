@@ -1,0 +1,185 @@
+{
+  "restaurants": [
+    {
+      "name": "Budget Bistro",
+      "location": "New York",
+      "price_range": "cheap",
+      "meal_prices": {
+        "breakfast": 5,
+        "lunch": 10,
+        "dinner": 15
+      }
+    },
+  
+    {
+      "name": "Midway Diner",
+      "location": "New York",
+      "price_range": "mid_range",
+      "meal_prices": {
+        "breakfast": 12,
+        "lunch": 20,
+        "dinner": 25
+      }
+    },
+    {
+      "name": "Luxury Lounge",
+      "location": "New York",
+      "price_range": "expensive",
+      "meal_prices": {
+        "breakfast": 20,
+        "lunch": 30,
+        "dinner": 40
+      }
+    },
+    {
+      "name": "Café du Monde",
+      "location": "Paris",
+      "price_range": "cheap",
+      "meal_prices": {
+        "breakfast": 8,
+        "lunch": 15,
+        "dinner": 20
+      }
+    },
+    {
+      "name": "Le Petit Bistro",
+      "location": "Paris",
+      "price_range": "mid_range",
+      "meal_prices": {
+        "breakfast": 15,
+        "lunch": 25,
+        "dinner": 35
+      }
+    },
+    {
+      "name": "L'Atelier de Joël Robuchon",
+      "location": "Paris",
+      "price_range": "expensive",
+      "meal_prices": {
+        "breakfast": 25,
+        "lunch": 50,
+        "dinner": 75
+      }
+    },
+    {
+      "name": "The Breakfast Club",
+      "location": "London",
+      "price_range": "cheap",
+      "meal_prices": {
+        "breakfast": 7,
+        "lunch": 14,
+        "dinner": 18
+      }
+    },
+    {
+      "name": "Jamie’s Italian",
+      "location": "London",
+      "price_range": "mid_range",
+      "meal_prices": {
+        "breakfast": 12,
+        "lunch": 22,
+        "dinner": 30
+      }
+    },
+    {
+      "name": "The Ledbury",
+      "location": "London",
+      "price_range": "expensive",
+      "meal_prices": {
+        "breakfast": 20,
+        "lunch": 45,
+        "dinner": 70
+      }
+    },
+    {
+      "name": "Sushizanmai",
+      "location": "Tokyo",
+      "price_range": "cheap",
+      "meal_prices": {
+        "breakfast": 8,
+        "lunch": 12,
+        "dinner": 18
+      }
+    },
+    {
+      "name": "Tusk",
+      "location": "Tokyo",
+      "price_range": "mid_range",
+      "meal_prices": {
+        "breakfast": 15,
+        "lunch": 25,
+        "dinner": 35
+      }
+    },
+    {
+      "name": "Narisawa",
+      "location": "Tokyo",
+      "price_range": "expensive",
+      "meal_prices": {
+        "breakfast": 30,
+        "lunch": 55,
+        "dinner": 90
+      }
+    },
+    {
+      "name": "The Grounds of Alexandria",
+      "location": "Sydney",
+      "price_range": "cheap",
+      "meal_prices": {
+        "breakfast": 10,
+        "lunch": 18,
+        "dinner": 22
+      }
+    },
+    {
+      "name": "Bennelong Restaurant",
+      "location": "Sydney",
+      "price_range": "mid_range",
+      "meal_prices": {
+        "breakfast": 18,
+        "lunch": 35,
+        "dinner": 50
+      }
+    },
+    {
+      "name": "Quay",
+      "location": "Sydney",
+      "price_range": "expensive",
+      "meal_prices": {
+        "breakfast": 35,
+        "lunch": 65,
+        "dinner": 100
+      }
+    },
+    {
+      "name": "Roscioli",
+      "location": "Rome",
+      "price_range": "cheap",
+      "meal_prices": {
+        "breakfast": 5,
+        "lunch": 12,
+        "dinner": 15
+      }
+    },
+    {
+      "name": "Osteria Francescana",
+      "location": "Rome",
+      "price_range": "mid_range",
+      "meal_prices": {
+        "breakfast": 15,
+        "lunch": 30,
+        "dinner": 45
+      }
+    },
+    {
+      "name": "La Pergola",
+      "location": "Rome",
+      "price_range": "expensive",
+      "meal_prices": {
+        "breakfast": 30,
+        "lunch": 60,
+        "dinner": 120
+      }
+    }
+  ]
+}
