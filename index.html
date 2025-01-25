@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Creators</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Na<span>tours</span></h1>
+    <ul class="nav_links">
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#" class="cta">Contact</a></li>
+      <!-- Search Icon -->
+      <li class="search-icon">
+        <a href="javascript:void(0)" onclick="toggleSearch()"><i class="ri-search-line"></i></a>
+      </li>
+    </ul>
+    <i class="ri-menu-2-line menu_btn"></i>
+  </nav>
+
+  <!-- Search Box (Initially Hidden) -->
+  <div id="searchBox" class="search-box">
+    <input type="text" id="searchInput" placeholder="Enter a place to search...">
+    <button onclick="search()">Search</button>
+  </div>
+
+  <!-- Search Result Display -->
+  <div id="searchResult" class="search-result" style="display:none;">
+    <h2 id="placeName"></h2>
+    <p id="placeDescription"></p>
+  </div>
+
+  <header>
+    <div class="header_content">
+      <h2>Explore the wonderful world</h2>
+      <div class="line"></div>
+    </div>
+  </header>
+
+
+   <!-- Search Engine Box -->
+   <div class="search-box">
+    <input type="text" id="search-input" placeholder="Enter place to search..." />
+    <button id="search-btn">Search</button>
+  </div>
+
+  <!-- Search Result Section -->
+  <div class="search-result" id="search-result">
+    <h2 id="place-name"></h2>
+    <p id="place-description"></p>
+  </div>
+  
+
+  <script src="script.js"></script>
+  <script>
+    // Function to toggle the visibility of the search box
+    function toggleSearch() {
+      var searchBox = document.getElementById('searchBox');
+      searchBox.style.display = searchBox.style.display === 'none' || searchBox.style.display === '' ? 'block' : 'none';
+    }
+
+    // Simple search function with a mock response for "Vallikav"
+    function search() {
+      var searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
+      
+      // Example search logic
+      if (searchQuery === 'vallikav') {
+        document.getElementById('placeName').innerText = 'Vallikav';
+        document.getElementById('placeDescription').innerText = 'Vallikav is a beautiful town known for its scenic beauty and rich culture.';
+        document.getElementById('searchResult').style.display = 'block';
+      } else {
+        document.getElementById('placeName').innerText = 'No results found';
+        document.getElementById('placeDescription').innerText = 'Please try searching for another place.';
+        document.getElementById('searchResult').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+
+</html>
