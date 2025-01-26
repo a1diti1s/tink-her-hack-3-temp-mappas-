@@ -76,6 +76,8 @@ https://docs.google.com/document/d/1BYid__zuK32EjBEnlthQLCgIGzgqHthAfBN8vX1E1CU/
 ### Project Demo
 # Video
 video/video presentation.mp4
+
+
 Our project MAPPAS TRAVEL BUDDY is a *Travel Companion Platform* designed to empower users to explore the world independently while offering a seamless and personalized experience. The platform features a *Search and Explore* functionality that provides a detailed guide for any chosen destination, including must-visit attractions, activities, and budget-friendly accommodation options.  
 
 We also offer *Budget Travel* tools, allowing users to find nearby hotels and restaurants categorized by cost, making it easy to plan meals and stays within their budget.  
