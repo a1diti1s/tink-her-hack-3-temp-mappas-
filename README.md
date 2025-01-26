@@ -71,8 +71,16 @@ https://docs.google.com/document/d/1BYid__zuK32EjBEnlthQLCgIGzgqHthAfBN8vX1E1CU/
 
 # Screenshots (Add at least 3)
 
-When you search a location
-images_travel/WhatsApp Image 2025-01-26 at 10.34.43_91d28811.jpg
+Home page:
+
+
+
+When you search a location:
+1.images_travel/WhatsApp Image 2025-01-26 at 10.34.43_91d28811.jpg
+2.images_travel/WhatsApp Image 2025-01-26 at 10.35.30_735ae170.jpg
+
+
+
 
 
 
