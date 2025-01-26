@@ -96,6 +96,7 @@ images_travel/budge1.jpg
 ### Project Demo
 # Video
 video/video presentation.mp4
+Googke Drive link: https://drive.google.com/file/d/1-VUEdtI8fxIiwb2M0f-Swl48J-yf5ly1/view?usp=drivesdk 
 
 
 Our project MAPPAS TRAVEL BUDDY is a *Travel Companion Platform* designed to empower users to explore the world independently while offering a seamless and personalized experience. The platform features a *Search and Explore* functionality that provides a detailed guide for any chosen destination, including must-visit attractions, activities, and budget-friendly accommodation options.  
@@ -107,11 +108,6 @@ For entertainment, the platform includes a *Mood-Based Music Playlist* feature t
 To ensure safety, we’ve integrated an *Emergency Button* that provides quick access to nearby police stations and emergency contacts, acting as an SOS for solo travelers or those in dangerous situations.  
 
 With these features, our platform ensures users can enjoy hassle-free, enjoyable, and secure travel experiences.
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-
 
 ---
 Made with ❤️ at TinkerHub
