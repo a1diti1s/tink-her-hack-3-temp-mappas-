@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .emergency-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .emergency-btn:hover {
+            background-color: darkred;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-content h2 {
+            color: red;
+        }
+
+        .modal-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .modal-content ul li {
+            margin: 10px 0;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-content ul li span {
+            flex: 1;
+            text-align: left;
+        }
+
+        .call-btn {
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .call-btn:hover {
+            background: darkgreen;
+        }
+
+        .close-btn {
+            margin-top: 20px;
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Emergency Button -->
+    <button class="emergency-btn" onclick="toggleModal()">Emergency</button>
+
+    <!-- Modal -->
+    <div class="modal" id="emergencyModal">
+        <div class="modal-content">
+            <h2>Emergency Contacts</h2>
+            <ul>
+                <li>
+                    <span>📞 Police: 100</span>
+                    <button class="call-btn" onclick="makeCall('100')">Call</button>
+                </li>
+                <li>
+                    <span>🚒 Fire: 101</span>
+                    <button class="call-btn" onclick="makeCall('101')">Call</button>
+                </li>
+                <li>
+                    <span>🚑 Ambulance: 102</span>
+                    <button class="call-btn" onclick="makeCall('102')">Call</button>
+                </li>
+                <li>
+                    <span>👩‍🦰 Women Helpline: 1091</span>
+                    <button class="call-btn" onclick="makeCall('1091')">Call</button>
+                </li>
+                <li>
+                    <span>👶 Child Helpline: 1098</span>
+                    <button class="call-btn" onclick="makeCall('1098')">Call</button>
+                </li>
+            </ul>
+            <button class="close-btn" onclick="toggleModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Modal
+        function toggleModal() {
+            const modal = document.getElementById('emergencyModal');
+            modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            const modal = document.getElementById('emergencyModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+
+        // Make a call
+        function makeCall(number) {
+            window.location.href = `tel:${number}`;
+        }
+    </script>
+</body>
+
+</html>
