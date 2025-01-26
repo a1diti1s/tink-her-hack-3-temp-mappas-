@@ -74,6 +74,12 @@ https://docs.google.com/document/d/1BYid__zuK32EjBEnlthQLCgIGzgqHthAfBN8vX1E1CU/
 Home page:
 images_travel/WhatsApp Image 2025-01-26 at 09.27.07_4b00cc99.jpg
 
+Travel Playlist:
+images_travel/WhatsApp Image 2025-01-26 at 10.18.49_f147ec8f.jpg
+
+
+Emergency feature:
+
 
 When you search a location:
 1.images_travel/WhatsApp Image 2025-01-26 at 10.34.43_91d28811.jpg
