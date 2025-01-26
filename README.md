@@ -11,7 +11,8 @@
 - Member 3: Judith Ann Benny - [Amrita School of Computing, Amritapuri]
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+(https://tink-her-hack-3-temp-mappas.vercel.app/ )
+
 
 ### Project Description
 Our platform is your ultimate travel companion, offering an advanced search feature to explore destinations, discover attractions, find accommodations, and plan budgets effortlessly. It also includes a travel playlist to enhance your journey and an emergency button designed specifically for solo travelers’ safety. Whether you're exploring new places or planning your next trip, we've got everything you need for a seamless travel experience.
