@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore New York</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .nav-buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .nav-buttons button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons button:hover {
+      background-color: #0056b3;
+    }
+    .section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0;
+      display: none;
+    }
+    .attraction-list {
+      list-style: none;
+      padding: 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .attraction-item h2 {
+      margin: 0 0 10px;
+    }
+    .attraction-item img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .attraction-item p {
+      margin: 10px 0 0;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Explore New York</h1>
+  <div class="nav-buttons">
+    <button onclick="showSection('attractions')">Things to Do</button>
+    <button onclick="showSection('stays')">Stays Nearby</button>
+  </div>
+
+  <div id="attractions" class="section active">
+    <h2>Top 5 Things to Do in New York</h2>
+    <ol class="attraction-list">
+      <li class="attraction-item">
+        <h2>1. Statue of Liberty</h2>
+        <img src="{{ url_for('static', filename='images/31.png') }}" alt="Statue of Liberty">
+        <p>The iconic symbol of New York and a must-visit landmark offering breathtaking views of the city.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>2. Central Park</h2>
+        <img src="{{ url_for('static', filename='images/32.png') }}" alt="Central Park">
+        <p>An urban oasis in the heart of Manhattan, perfect for picnics, walks, and scenic views.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>3. Brooklyn Bridge</h2>
+        <img src="{{ url_for('static', filename='images/33.png') }}" alt="Brooklyn Bridge">
+        <p>A historic suspension bridge offering stunning views of Manhattan and Brooklyn.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>4. Rockefeller Center</h2>
+        <img src="{{ url_for('static', filename='images/34.png') }}" alt="Rockefeller Center">
+        <p>A must-see destination, especially during the holiday season, featuring ice skating and city views.</p>
+      </li>
+    </ol>
+  </div>
+
+  <div id="stays" class="section">
+    <h2>Stays Nearby</h2>
+    <ol class="attraction-list">
+      <li class="attraction-item">
+        <h2>1. New York Hilton Midtown</h2>
+        <img src="{{ url_for('static', filename='images/41.png') }}" alt="New York Hilton Midtown">
+        <p>A luxurious hotel in the heart of Manhattan, perfect for business and leisure travelers alike.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>2. The Manhattan at Times Square Hotel</h2>
+        <img src="{{ url_for('static', filename='images/42.png') }}" alt="The Manhattan at Times Square Hotel">
+        <p>Located steps away from Times Square, this hotel combines comfort with a prime location.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>3. YOTEL New York Times Square</h2>
+        <img src="{{ url_for('static', filename='images/43.png') }}" alt="YOTEL New York Times Square">
+        <p>A high-tech, modern hotel offering an unforgettable experience with robot luggage storage.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>4. DoubleTree by Hilton Hotel New York Times Square West</h2>
+        <img src="{{ url_for('static', filename='images/44.png') }}" alt="DoubleTree by Hilton Hotel New York Times Square West">
+        <p>Enjoy panoramic views of New York City with easy access to major attractions.</p>
+      </li>
+    </ol>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+</body>
+</html>

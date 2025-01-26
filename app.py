@@ -13,6 +13,8 @@ def search():
         return render_template('paris.html')
     if query == 'Romania':
         return render_template('romania.html')
+    if query == 'New York':
+        return render_template('new-york.html')
     # Add more conditions here for other places
     return render_template('index.html', error="No results found.")
 
