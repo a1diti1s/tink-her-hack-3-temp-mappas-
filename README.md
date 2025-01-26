@@ -79,10 +79,14 @@ images_travel/WhatsApp Image 2025-01-26 at 10.18.49_f147ec8f.jpg
 
 
 Emergency feature:
+images_travel/WhatsApp Image 2025-01-26 at 10.19.23_f95e7fc7.jpg
+
 
 
 When you search a location:
+
 1.images_travel/WhatsApp Image 2025-01-26 at 10.34.43_91d28811.jpg
+
 2.images_travel/WhatsApp Image 2025-01-26 at 10.35.30_735ae170.jpg
 
 
