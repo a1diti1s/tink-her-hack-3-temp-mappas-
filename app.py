@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/playlist')
+def playlist():
+    return render_template('playlist.html')
+
 @app.route('/search', methods=['GET'])
 def search():
     query = request.args.get('query')
