@@ -1,0 +1,131 @@
+ /* General body styling */
+ body {
+  background: url('paribg.jpg') no-repeat center center/cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #e1a100;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Header section */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #222;
+  margin: 40px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Section styling */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Attraction list styling */
+.attraction-list, .hotel-list {
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Attraction item styling */
+.attraction-item, .hotel-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attraction-item:hover, .hotel-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.attraction-item h2, .hotel-item h2 {
+  margin: 0 0 15px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Image styling for items */
+.attraction-item img, .hotel-item img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Paragraph styling for items */
+.attraction-item p, .hotel-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Adding hover effect to images */
+.attraction-item img:hover, .hotel-item img:hover {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+footer a {
+  color: #e1a100;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #fff;
+}

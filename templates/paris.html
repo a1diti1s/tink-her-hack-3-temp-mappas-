@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Paris</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='paristyles.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    /* General body styling */
+    body {
+      background: url('paribg.jpg') no-repeat center center/cover;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navigation bar styling */
+    nav {
+      background-color: #333;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #e1a100;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    /* Header section */
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #222;
+      margin: 40px 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Section styling */
+    .section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Attraction list styling */
+    .attraction-list, .hotel-list {
+      padding: 0;
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    /* Attraction item styling */
+    .attraction-item, .hotel-item {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .attraction-item:hover, .hotel-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .attraction-item h2, .hotel-item h2 {
+      margin: 0 0 15px;
+      font-size: 24px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Image styling for items */
+    .attraction-item img, .hotel-item img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Paragraph styling for items */
+    .attraction-item p, .hotel-item p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Adding hover effect to images */
+    .attraction-item img:hover, .hotel-item img:hover {
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #e1a100;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#attractions">Top Things to Do</a></li>
+      <li><a href="#accommodations">Top Hotels</a></li>
+    </ul>
+  </nav>
+
+  <!-- Attractions Section -->
+  <section id="attractions" class="section">
+    <h1>Top 5 Things to Do in Paris</h1>
+    <ol class="attraction-list">
+      <li class="attraction-item">
+        <h2>Eiffel Tower</h2>
+        <img src="{{ url_for('static', filename='images/1.png') }}" alt="Eiffel Tower">
+        <p>The iconic symbol of Paris and a must-visit landmark offering breathtaking views of the city.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>Louvre Museum</h2>
+        <img src="{{ url_for('static', filename='images/2.png') }}" alt="Louvre Museum">
+        <p>Home to the famous Mona Lisa, the Louvre is the world's largest art museum.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>Notre-Dame Cathedral</h2>
+        <img src="{{ url_for('static', filename='images/3.png') }}" alt="Notre-Dame Cathedral">
+        <p>A masterpiece of French Gothic architecture located on Île de la Cité.</p>
+      </li>
+      <li class="attraction-item">
+        <h2>Sacré-Cœur Basilica</h2>
+        <img src="{{ url_for('static', filename='images/4.png') }}" alt="Sacré-Cœur Basilica">
+        <p>This white-domed basilica sits atop Montmartre and offers stunning views of Paris.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Accommodations Section -->
+  <section id="accommodations" class="section">
+    <h1>Top 4 Hotels in Paris</h1>
+    <ol class="hotel-list">
+      <li class="hotel-item">
+        <h2>Hotel Ritz Paris</h2>
+        <img src="{{ url_for('static', filename='images/5.png') }}" alt="Hotel Ritz Paris">
+        <p>The iconic Hotel Ritz in Paris, known for its luxury and rich history.</p>
+      </li>
+      <li class="hotel-item">
+        <h2>Shangri-La Hotel Paris</h2>
+        <img src="{{ url_for('static', filename='images/6.png') }}" alt="Shangri-La Hotel Paris">
+        <p>Experience breathtaking views of the Eiffel Tower from this lavish hotel.</p>
+      </li>
+      <li class="hotel-item">
+        <h2>Le Meurice</h2>
+        <img src="{{ url_for('static', filename='images/7.png') }}" alt="Le Meurice">
+        <p>A luxury hotel with artistic vibes and excellent service.</p>
+      </li>
+      <li class="hotel-item">
+        <h2>Local Hotel Example</h2>
+        <img src="{{ url_for('static', filename='images/8.png') }}" alt="Local Hotel Example">
+        <p>Ensure your local images are placed in the correct folder path.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Explore Paris © 2025 | <a href="#">Contact</a> | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>

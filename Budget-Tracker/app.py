@@ -29,4 +29,4 @@ def calculate_cost():
     return jsonify({"total_cost": total_cost})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=5001)
