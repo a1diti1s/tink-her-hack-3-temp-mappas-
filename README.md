@@ -111,10 +111,7 @@ With these features, our platform ensures users can enjoy hassle-free, enjoyable
 # Additional Demos
 [Add any extra demo materials/links]
 
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+
 
 ---
 Made with ❤️ at TinkerHub
