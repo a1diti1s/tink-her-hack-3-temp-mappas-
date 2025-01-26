@@ -89,9 +89,8 @@ When you search a location:
 
 2.images_travel/WhatsApp Image 2025-01-26 at 10.35.30_735ae170.jpg
 
-
-
-
+Travel Budget planner:
+images_travel/budge1.jpg
 
 
 ### Project Demo
