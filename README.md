@@ -70,7 +70,7 @@ python app.py
 https://docs.google.com/document/d/1BYid__zuK32EjBEnlthQLCgIGzgqHthAfBN8vX1E1CU/edit?tab=t.0
 
 # Screenshots (Add at least 3)
-
+images_travel\WhatsApp Image 2025-01-26 at 09.27.07_4b00cc99.jpg
 
 
 ### Project Demo
